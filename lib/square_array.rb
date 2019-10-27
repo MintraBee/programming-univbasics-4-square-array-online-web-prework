@@ -1,15 +1,9 @@
 def square_array(array)
-  counter = 0
+  squared = []
+  count = 0
+  while count < array.size do
+    squared << (array[count] ** 2)
+    count = count + 1
+  end
+  squared
 end
-
-while array[counter] do
-  puts array[counter]
-  counter += 1
-
-numbers =[1,2,3]
-
-square_array(numbers)
-
-new_numbers = [9,10,16,25]
-
-square_array(new_numbers)
